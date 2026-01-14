@@ -17,7 +17,7 @@ export default function Navbar() {
                 className="transition-transform duration-300 hover:scale-110"
             />
 
-            <ul className="flex items-center gap-7">
+            <ul className="flex items-center gap-7 z-50">
                 {links.map(item => (
                     <li key={item} className="relative inline-block cursor-pointer group leading-none">
                         <span>{item}</span>
