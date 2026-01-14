@@ -1,10 +1,9 @@
 import Divider from './components/Divider'
-import Links from './components/Footer'
+import Links from './components/Links'
 import Footer from './components/Footer'
 import Navbar from './components/navbar'
 import About from './pages/About'
 import Hero from './pages/Hero'
-import Pricing from './pages/Pricing'
 import Reviews from './pages/Reviews'
 
 function App() {
@@ -20,6 +19,7 @@ function App() {
      <Divider color={'#FEFEFE'} width={100} />
      <Links />
      <Divider color={'#E5E5E5'} width={95} />
+     <Footer />
     </>
   )
 }
