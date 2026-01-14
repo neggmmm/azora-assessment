@@ -12,13 +12,13 @@ function App() {
     <>
     <Navbar />
      <Hero />
-     <Divider color={'#E5E5E5'} width={80} />
+     <Divider color={'#AAA'} width={80} />
      <About />
-     <Divider color={'#E5E5E5'} width={80} />
+     <Divider color={'#AAA'} width={80} />
      <Reviews />
      <Divider color={'#FEFEFE'} width={100} />
      <Links />
-     <Divider color={'#E5E5E5'} width={95} />
+     <Divider color={'#AAA'} width={95} />
      <Footer />
     </>
   )
