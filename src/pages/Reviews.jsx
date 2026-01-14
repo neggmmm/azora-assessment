@@ -54,7 +54,7 @@ export default function Reviews() {
                         <p className='text-gray-600 w-[300px]'>What you say about how Setapp powers you up.</p>
                         <div className='flex gap-4'>
                             {[0, 1, 2, 3].map((i) => (
-                                <button key={i} className=' rounded-full '>
+                                <button key={i} className='cursor-pointer hover:scale-110 transition-all duration-200 rounded-full '>
                                     <img src={`./reviews/Frame (${i}).png`} />
                                 </button>
                             ))}
@@ -63,16 +63,16 @@ export default function Reviews() {
                 </div>
 
                 {/* Testimonial cards grid */}
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-5 '>
                     {testimonials.map((testimonial) => (
-                        <div>
-                            <img src={testimonial.quoteImage} alt="Quote" className='mb-4' />
-                            <div className='flex items-center'>
-                                <div className='flex flex-col mr-auto'>
-                                    <p className='text-black'>{testimonial.name}</p>
-                                    <p className='text-gray-600 mb-2'>{testimonial.username}</p>
+                        <div className='mx-2 bg-[#F5F5F5] rounded group hover:scale-105 transition-all duration-400'>
+                            <img src={testimonial.quoteImage} alt="Quote" className='mb-4 ' />
+                            <div className='flex items-center px-2 py-5'>
+                                <div className='flex flex-col mr-auto '>
+                                    <p className='text-black text-[18px] group-hover:scale-110 transition-all'>{testimonial.name}</p>
+                                    <p className='text-gray-600 mb-2 text-[14px] '>{testimonial.username}</p>
                                 </div>
-                                <img src={testimonial.platform} alt="Platform" />
+                                <img className='group-hover:scale-125 transition-all' src={testimonial.platform} alt="Platform" />
                             </div>
                         </div>
                     ))}
