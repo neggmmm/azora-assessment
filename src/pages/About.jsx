@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='mx-40 my-20'>
+    <div className='h-[200vh] mx-40 my-20'>
         <div className='flex justify-between items-center my-20'>
             <h1 className='w-[420px] text-4xl'>What you get on Setapp.</h1>
             <p className='w-[460px] font-light'>With a single monthly subscription at $9.99, you get 240+ apps for your Mac.</p>

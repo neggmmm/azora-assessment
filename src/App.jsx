@@ -2,6 +2,7 @@ import Divider from './components/Divider'
 import Navbar from './components/navbar'
 import About from './pages/About'
 import Hero from './pages/Hero'
+import Reviews from './pages/Reviews'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
      <Divider />
      <About />
      <Divider />
+     <Reviews />
     </>
   )
 }
