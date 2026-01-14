@@ -25,7 +25,7 @@ export default function Reviews() {
         }
     ]
     return (
-        <div className='bg-white mt-20 mb-60'>
+        <div className='bg-white mt-20 mb-70'>
             {/* Carousel with negative margin to overlap */}
             <div className=''>
                 <div className=' h-[360px] bg-[#26262B]'></div>
