@@ -12,10 +12,10 @@ export default function
                     </p>
                 </div>
                 <div className='flex gap-2'>
-                    <button className='bg-[#26262B] px-5 py-2 rounded'>
+                    <button className='bg-[#26262B] hover:scale-105  transition-all duration-300 border px-5 py-2 rounded'>
                         Get started now
                     </button>
-                    <button className='px-5 py-2 rounded border border-[#26262B] text-[#26262B]'>
+                    <button className='px-5 py-2 rounded border hover:bg-[#26262B] hover:scale-105  hover:text-white transition-all duration-300 border-[#26262B] text-[#26262B]'>
                         More about Setapp
                     </button>
                 </div>

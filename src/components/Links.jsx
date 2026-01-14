@@ -11,14 +11,14 @@ export default function Links() {
 
             <div className='flex justify-between '>
                 <div className='flex flex-col justify-between h-[240px]'>
-                    <div className='flex items-center'>
+                    <div className='flex items-center gap-2'>
                         <img src='Vector.png' className='w-[20px] h-[32px]' />
                         <p>SETAPP</p>
                     </div>
                     <div className='flex flex-col gap-2'>
                         <p>Updates from our team, written with love </p>
                         <div className='flex'>
-                            <input className='rounded-l bg-[#404547] w-full py-2 px-2' placeholder='Enter your email' />
+                            <input className='rounded-l bg-[#404547] w-full py-2 px-2 outline-none focus:scale-105 transition-all' placeholder='Enter your email' />
                             <div className='bg-white w-14 text-center py-3 px-5 rounded-r'>
                                 <img className='text-[#404547]' src='Frame.png' />
                             </div>
@@ -28,37 +28,39 @@ export default function Links() {
                 <div className='flex justify-around w-1/2'>
                     <ul className='text-white'>
                         {firstList.map(item => (
-                            <li className='py-2' key={item}>
-                                {item}
+                            <li key={item} className="relative py-2 opacity-70 hover:opacity-90 cursor-pointer group leading-none">
+                                <span>{item}</span>
+                                <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100" />
                             </li>
                         )
                         )}
                     </ul>
                     <ul className='text-white'>
                         {secondList.map(item => (
-                            <li className='py-2' key={item}>
-                                {item}
+                            <li key={item} className="relative py-2 opacity-70 hover:opacity-90 cursor-pointer group leading-none">
+                                <span>{item}</span>
+                                <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100" />
                             </li>
                         )
                         )}
                     </ul>
                     <ul className='text-white'>
                         {lastList.map(item => (
-                            <li className='py-2' key={item}>
-                                {item}
+                            <li key={item} className="relative py-2 opacity-70 hover:opacity-90 cursor-pointer group leading-none">
+                                <span>{item}</span>
+                                <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100" />
                             </li>
                         )
                         )}
                     </ul>
                 </div>
             </div>
-            <div className='flex justify-between'>
-                <div>
-                    <span className='bg-[#969799] px-2 '>
+            <div className='flex justify-between select-none'>
+                <div className='text-[11px] font-bold'>
+                    <span className='bg-[#969799] px-2 py-1'>
                         DMCA
-
                     </span>
-                    <span className='bg-[#404547] px-2'> PROTECTED</span>
+                    <span className='bg-[#404547] px-2 py-1'> PROTECTED</span>
                 </div>
 
                 <div className='flex items-center'>
