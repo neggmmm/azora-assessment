@@ -1,3 +1,4 @@
+import Divider from './components/Divider'
 import Navbar from './components/navbar'
 import Hero from './pages/Hero'
 
@@ -7,6 +8,7 @@ function App() {
     <>
     <Navbar />
      <Hero />
+     <Divider />
     </>
   )
 }
